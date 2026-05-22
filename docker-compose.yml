@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  ibsrv:
+    image: camojiet/1c-single:8.5.1.1150
+    container_name: ibsrv
+    ports:
+      - "8314:8314"
+    volumes:
+      - ./fs-data:/fs-data
+      - ./storage:/storage
+    restart: unless-stopped
+    environment:
+      PORT: 8314
