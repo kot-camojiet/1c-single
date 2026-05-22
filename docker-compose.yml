@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
   ibsrv:
-    image: camojiet/1c-single:8.5.1.1150
-    container_name: ibsrv
+    image: camojiet/1c-single:latest
+    container_name: 1c-single
     ports:
       - "8314:8314"
     volumes:
