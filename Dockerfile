@@ -5,7 +5,7 @@ FROM debian:bookworm-slim AS builder
 
 ARG WEB_PORT=8314
 ARG VER=8.5.1.1343
-ARG SETUP_URL=https://cloud.accounter.org/public.php/dav/files/5ZQ7qcBs3yLPX6T/?accept=zip
+ARG SETUP_URL=https://cloud.banana.org/distr/server64_8_5_1_1343.zip
 
 ENV PORT=${WEB_PORT}
 ENV ONEC_VER=${VER}
